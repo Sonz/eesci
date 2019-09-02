@@ -6,7 +6,7 @@ describe('webpack.base.js test case', () => {
 
 	console.log(baseConfig)
 	it('entry', () => {
-		assert.equal(baseConfig.entry.index, '/Users/Arcturus/workspace/geekbang/webpack/builder-webpack/test/smoke/template/src/index/index.js')
-		assert.equal(baseConfig.entry.search, '/Users/Arcturus/workspace/geekbang/webpack/builder-webpack/test/smoke/template/src/search/index.js')
+		assert.equal(baseConfig.entry.index.includes('test/smoke/template/src/index/index.js'), true)
+		assert.equal(baseConfig.entry.search.includes('test/smoke/template/src/search/index.js'), true)
 	})
 })
