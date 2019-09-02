@@ -1,0 +1,7 @@
+parser: babel-eslint
+extends: 
+  - airbnb-base
+  # - airbnb/hooks
+env:
+  browser: true
+  node: true
